@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cantiz Connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <script src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+</head>
+
+<body style="background-color: #363636">
+
+    <nav class="navbar">
+        <img src="Logo.png" alt="logo">
+    </nav>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators"></ol>
+        <div class="carousel-inner"></div>
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        </a>
+    </div>
+
+    <section>
+        <div class="bgnd">
+            <div class="qr-text">
+                <h2> Guest can scan QR Code and get the link</h2>
+                <div class="img-text">
+                    <img src="placeholder.png" alt="Loading QR Code" id="qr-code" class="qr-img" />
+                    <ol>
+                        <li> Connect to the guest wifi </li>
+                        <li> Scan the QR code</li>
+                        <li> Cast using your favourite App</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="line-circle">
+                <div class="line"> </div>
+                <div class="circle"><span style="font-size :36px; font-weight:500; font-family : Nunito Sans;"> OR </span></div>
+            </div>
+
+            <div class=" url-text ">
+                <h2> Guest can enter URL</h2>
+                <ol>
+                    <li>Connect to the guest wifi</li>
+                    <li> Manually connect using this url,<br> <label id="content" style="font-style: italic;">http://192.168.29.168</label></li>
+                    <li>Cast using your favourite App</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
