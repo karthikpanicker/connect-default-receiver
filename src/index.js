@@ -75,7 +75,6 @@ $(document).ready(function () {
             .then(function (myJson) {
                 if (myJson) {
                     const url = new URL(myJson);
-                    document.getElementById("code-span").textContent = "Fill in your room details and enter code: "+url.searchParams.get("passcode");
                     var qr = new QRious({
                         element: document.getElementById('qr-code'),
                         value: myJson,
