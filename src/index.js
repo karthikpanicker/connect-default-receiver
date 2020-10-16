@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import './css/meyer-reset.css';
 import 'bootstrap/dist/js/bootstrap.min';
+import './load-custom-sections';
+import { BASE_URL } from './constants';
 
 window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
 window.castReceiverManager.start();
@@ -62,7 +64,7 @@ $(document).ready(function () {
 
 (function() {
     function fetchRoomInfo() {
-        fetch('http://10.0.0.7:8001/launcher/roominfo')
+        fetch(BASE_URL + 'roominfo')
             .then(function (response) {
                 if (response.status == 200) {
                     return response.json();
