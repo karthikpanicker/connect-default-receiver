@@ -82,6 +82,7 @@ $(document).ready(function () {
                         value: myJson,
                         size: 250,
                     });
+                    document.getElementById("room-number").textContent = 1.searchParams.get("roomno");
                     document.getElementById("code-span").textContent = "Fill in your room details and enter code: "+ url.searchParams.get("passcode");
                 }
             })
